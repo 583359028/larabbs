@@ -31,7 +31,7 @@
                          </a>
                          <span> • </span>
                          <i class="far fa-clock"></i>
-                         <span class="timeago" title="最后活跃于：{{ $topic->updated_at }}">{{ $topic->updated_at->diffForHumans() }}</span>
+                         <span class="timeago" title="最后活跃于：{{ $topic->updated_at }}">{{ if_query('order', 'recent') ? $topic->created_at->diffForHumans() . '发布' : $topic->updated_at->diffForHumans() . '回复' }}</span>
                      </small>
 
 
