@@ -16870,6 +16870,10 @@ body {
   color: inherit;
 }
 
+.dropdown {
+  margin-top: 5px;
+}
+
 /* User register page */
 
 .register-page img.captcha {
@@ -17401,5 +17405,20 @@ body {
 .topic-reply .meta {
   font-size: 0.9em;
   color: #b3b3b3;
+}
+
+/* 消息通知 */
+
+.notification-badge .badge {
+  font-size: 12px;
+  margin-top: 14px;
+}
+
+.notification-badge .badge-secondary {
+  background-color: #EBE8E8;
+}
+
+.notification-badge .badge-hint {
+  background-color: #d15b47 !important;
 }
 
