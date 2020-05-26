@@ -57,7 +57,7 @@ return [
             'autocomplete'           => true,
 
             // 自动补全的搜索字段
-            'search_fields'          => ["CONCAT(id, ' ',name)"],
+            'search_fields'          => ["CONCAT(id, ' ', name)"],
 
             // 自动补全排序
             'options_sort_field'     => 'id',
@@ -85,14 +85,14 @@ return [
             'type'               => 'relationship',
             'name_field'         => 'name',
             'autocomplete'       => true,
-            'search_fields'      => array(["CONCAT(id, ' ', name)"]),
+            'search_fields'      => array("CONCAT(id, ' ', name)"),
             'options_sort_field' => 'id',
         ],
         'category' => [
             'title'              => '分类',
             'type'               => 'relationship',
             'name_field'         => 'name',
-            'autocomplete'       => array(["CONCAT(id, ' ', name)"]),
+            'autocomplete'       => array("CONCAT(id, ' ', name)"),
             'options_sort_field' => 'id',
         ],
     ],
